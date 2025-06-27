@@ -1,0 +1,9 @@
+spring:
+   application:
+      name: MCPServer
+   ai:
+    mcp:
+     server:
+       sseEndpoint: /api/vi/sse
+       type: sync
+       
