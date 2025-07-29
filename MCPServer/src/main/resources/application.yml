@@ -1,0 +1,8 @@
+spring:
+   application:
+      name: MCPServer
+   ai:
+    mcp:
+     server:
+       sse-message-endpoint: /mcp/messages
+       type: sync
