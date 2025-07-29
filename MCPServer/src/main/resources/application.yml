@@ -4,6 +4,5 @@ spring:
    ai:
     mcp:
      server:
-       sseEndpoint: /api/vi/sse
+       sse-message-endpoint: /mcp/messages
        type: sync
-       

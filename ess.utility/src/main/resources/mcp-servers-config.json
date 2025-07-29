@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "spring-ai-mcp-weather": {
+            "command": "java",
+            "args": [
+                "-jar",
+                "C:\\Spring AI Learning\\spring-ai-examples\\MCPStdio\\build\\libs\\MCPStdio-0.0.1-SNAPSHOT.jar"
+            ]
+        }
+    }
+}
