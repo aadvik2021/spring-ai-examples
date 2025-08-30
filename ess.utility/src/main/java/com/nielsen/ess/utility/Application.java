@@ -1,5 +1,6 @@
 package com.nielsen.ess.utility;
 
+import java.util.Objects;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -31,7 +32,7 @@ public class Application {
     return ExchangeFilterFunction.ofRequestProcessor(req -> {
       RequestAttributes attribs = RequestContextHolder.getRequestAttributes();
       String token = null;
-      if (attribs instanceof ServletRequestAttributes) {
+      if (Objects.nonNull(attribs) && attribs instanceof ServletRequestAttributes) {
         HttpServletRequest request =
             (HttpServletRequest) ((ServletRequestAttributes) attribs).getRequest();
         token = request.getHeader("X-NIQ-TOKEN");
